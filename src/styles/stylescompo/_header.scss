@@ -1,0 +1,19 @@
+.header__container {
+  background-color: $base-black;
+  height: $size-72px;
+
+  .sub__header {
+    display: flex;
+    height: inherit;
+    align-items: center;
+
+    .header__text {
+      color: $text-white;
+      font-size: $size-24px;
+    }
+
+    span {
+      color: $primary-clr;
+    }
+  }
+}
