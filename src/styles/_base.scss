@@ -49,6 +49,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	color: $base-black;
+	background-color: $base-white;
 }
 
 ol, ul {
@@ -92,4 +94,25 @@ p, a, li, button, label {
 a {
 	text-decoration: none;
 	color: unset;
+}
+
+input {
+	all: unset;
+	border: $border-1;
+	box-shadow: $input-drop-shadow;
+	border-radius: $size-8px;
+	height: $size-36px;
+}
+
+.save__btn {
+	background-color: $secondary-clr;
+	padding: $size-6px $size-24px;
+	border-radius: $size-4px;
+	color: $text-white;
+}
+
+.cancel__btn {
+	padding: $size-6px $size-20px;
+	border-radius: $size-4px;
+	border: 1px solid $base-black;
 }
