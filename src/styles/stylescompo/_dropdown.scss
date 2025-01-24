@@ -1,0 +1,75 @@
+.menu__container {
+
+  .menu__sub-container {
+    display: flex;
+    background-color: $base-white;
+    width: 22rem;
+    height: $size-64px;
+    align-items: center;
+    border-radius: $size-16px $size-16px $size-16px $size-16px;
+    box-shadow: $menu-drop-shadow;
+    border: border-1;
+    padding: 0 $size-32px;
+
+    .menu__contents {
+      display: flex;
+      width: inherit;
+      justify-content: space-between;
+    }
+
+    .menu__left-content {
+      display: flex;
+      align-items: center;
+      gap: $size-12px;
+    }
+
+    .menu__icon {
+      width: $size-32px;
+    }
+
+    .chevron__container {
+      display: flex;
+      
+
+      img {
+        width: $size-28px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .menu__sub-container-2 {
+    border-radius: $size-16px $size-16px 0 0;
+  }
+}
+
+.gen__input-container {
+  background-color: $base-white;
+  width: 22rem;
+  height: auto;
+
+  .gen__input-sub {
+    display: flex;
+    flex-direction: column;
+    gap: $size-4px;
+    // align-items: flex-start;
+    padding: 0 $size-16px;
+  }
+}
+
+.dropdown__items {
+  display: flex;
+  flex-direction: column;
+  gap: $size-32px;
+  box-shadow: $card-drop-shadow;
+  width: 22rem;
+  border-radius: 0 0 $size-16px $size-16px;
+  padding: 0 0 $size-48px 0;
+  
+  .action__buttons {
+    display: flex;
+    gap: $size-16px;
+    padding: 0 $size-16px;
+    justify-content: flex-end;
+  }
+} 

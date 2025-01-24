@@ -1,0 +1,10 @@
+.main__contents {
+  margin-top: $size-96px;
+
+  .input__form-container {
+    display: flex;
+    flex-direction: column;
+    gap: $size-32px;
+  }
+}
+
