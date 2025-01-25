@@ -43,16 +43,15 @@
   }
 }
 
-.gen__input-container {
+.input__container {
   background-color: $base-white;
   width: 22rem;
   height: auto;
 
-  .gen__input-sub {
+  .input__sub-container {
     display: flex;
     flex-direction: column;
     gap: $size-4px;
-    // align-items: flex-start;
     padding: 0 $size-16px;
   }
 }
