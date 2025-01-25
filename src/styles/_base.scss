@@ -116,3 +116,13 @@ input {
 	border-radius: $size-4px;
 	border: 1px solid $base-black;
 }
+
+textarea {
+	height: 124px;
+	resize: none;
+	font-size: $size-16px;
+	border-radius: $size-4px;
+	padding: $size-8px $size-12px;
+	border: $border-1;
+	outline: none;
+}
