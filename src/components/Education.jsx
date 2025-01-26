@@ -1,4 +1,4 @@
-import { GenInfoMenuItem } from "./InputDropDown";
+import { InputItem } from "./InputDropDown";
 import Menu from "./InputDropDown";
 import educationIcon from "../assets/icons/bxs-graduation.svg";
 import { ActionButton } from "./Utilities";
@@ -6,27 +6,27 @@ import { ActionButton } from "./Utilities";
 function ItemInputs() {
   return (
     <div className="dropdown__items">
-      <GenInfoMenuItem
+      <InputItem
         labelName={"School"}
         inputType={"text"}
         inputId={"school__input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Course"}
         inputType={"text"}
         inputId={"course__input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Address"}
         inputType={"text"}
         inputId={"education__address-input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Start Date"}
         inputType={"date"}
         inputId={"start__date-input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"End Date"}
         inputType={"date"}
         inputId={"end__date-input"}

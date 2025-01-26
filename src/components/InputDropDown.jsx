@@ -1,29 +1,42 @@
-import { useState } from "react";
 import chevronUpIcon from "../assets/icons/bx-chevron-up.svg";
 import chevronDownIcon from "../assets/icons/bx-chevron-down.svg";
 
-export function GenInfoMenuItem({ labelName, inputType, inputId }) {
+export default function InputItem({
+  labelName,
+  inputType,
+  inputId,
+  value,
+  onChange,
+  "data-key": dataKey,
+}) {
   return (
-    <div className="gen__input-container">
-      <div className="gen__input-sub">
+    <div className="input__container">
+      <div className="input__sub-container">
         <label className="label__text">{labelName}</label>
-        <input
-          type={inputType}
-          name=""
-          id={inputId}
-        />
+        {inputType === "textarea" ? (
+          <textarea
+            name=""
+            id={inputId}
+            value={value}
+            onChange={onChange}
+            data-key={dataKey}
+          ></textarea>
+        ) : (
+          <input
+            type={inputType}
+            name=""
+            id={inputId}
+            value={value}
+            onChange={onChange}
+            data-key={dataKey}
+          />
+        )}
       </div>
     </div>
   );
 }
 
-export default function Menu({ iconPath, menuName, MenuData }) {
-  const [open, isOpen] = useState(false);
-
-  function handleOpenClick() {
-    isOpen(!open);
-  }
-
+export function Menu({ iconPath, menuName, open, handleOpenClick }) {
   return (
     <div className="menu__container container">
       <div className={`menu__sub-container ${open && "menu__sub-container-2"}`}>
@@ -47,11 +60,6 @@ export default function Menu({ iconPath, menuName, MenuData }) {
           </div>
         </div>
       </div>
-      {open && (
-        <div className="menu__data-container">
-          <MenuData />
-        </div>
-      )}
     </div>
   );
 }

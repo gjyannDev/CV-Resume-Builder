@@ -1,4 +1,4 @@
-import { GenInfoMenuItem } from "./InputDropDown";
+import { InputItem } from "./InputDropDown";
 import Menu from "./InputDropDown";
 import experienceIcon from "../assets/icons/bxs-briefcase.svg";
 import { ActionButton } from "./Utilities";
@@ -6,34 +6,34 @@ import { ActionButton } from "./Utilities";
 function ItemInputs() {
   return (
     <div className="dropdown__items">
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Company Name"}
         inputType={"text"}
         inputId={"company__input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Position Title"}
         inputType={"text"}
         inputId={"position__input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Start Date"}
         inputType={"date"}
         inputId={"start__date-input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"End Date"}
         inputType={"date"}
         inputId={"end__date-input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Location"}
         inputType={"text"}
         inputId={"location__input"}
       />
-      <GenInfoMenuItem
+      <InputItem
         labelName={"Description"}
-        inputType={"text"}
+        inputType={"textarea"}
         inputId={"description__input"}
       />
       <ActionButton />
