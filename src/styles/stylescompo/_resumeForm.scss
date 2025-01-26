@@ -1,0 +1,40 @@
+.resume__container {
+  width: 44.688rem;
+  height: inherit;
+
+  .resume__sub-container {
+    background-color: $base-white;
+    width: 44.688rem;
+    height: inherit;
+    box-shadow: $card-drop-shadow;
+
+    .general__info-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $size-48px $size-72px;
+
+      .general__info-sub {
+        display: flex;
+        flex-direction: column;
+        gap: $size-20px;
+        align-items: center;
+
+        .name__text {
+          font-size: $size-40px;
+        }
+
+        .contact__details-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    
+          .contact__details {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
