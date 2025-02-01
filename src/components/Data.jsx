@@ -7,14 +7,6 @@ const data = {
     address: "",
   },
 
-  educationData: {
-    schoolName: "",
-    courseName: "",
-    address: "",
-    startDate: "",
-    endDate: "",
-  },
-
   experienceData: {
     companyName: "",
     positionTitle: "",
@@ -24,5 +16,7 @@ const data = {
     jobDescription: "",
   },
 };
+
+export let educationDetailsData = [];
 
 export default data;
