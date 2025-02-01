@@ -35,6 +35,24 @@
         }
       }
     }
+
+    .education__info-details {
+      border: 1px solid red;
+      height: auto;
+      padding: $size-24px $size-72px;
+      display: flex;
+      flex-direction: column;
+      gap: $size-24px;
+
+      .education__header {
+        font-size: $size-24px;
+      }
+
+      .education__info-sub {
+        
+        
+      }
+    }
   }
 }
 
